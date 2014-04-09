@@ -18,7 +18,7 @@ xface 3.2.0 基于 Cordova 3.x开发，对结构进行了彻底调整，主要�
 ## 资源
 * [Plugin Server](http://plugins.polyvi.net:5984/) 查找可用插件以及id、version等信息
 * [SDK](http://192.168.2.209:8081/)
-* [xcps] ()
+* [xcps](http://192.168.2.22:3001/app/index.html#/)
 
 
 ## 和xFace 3.1.x对比
