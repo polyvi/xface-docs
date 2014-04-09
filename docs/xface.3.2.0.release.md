@@ -10,9 +10,9 @@ xface 3.2.0 基于 Cordova 3.x开发，对结构进行了彻底调整，主要�
 4. 重新设计的打包系统，更加简洁
 
 ## 使用CLI的开发流程
-[CLI guide](cli.md)
+[CLI guide](http://gitlab.polyvi.com/xface/xface-docs/blob/master/docs/cli.md)
 
-## 传统方式
+## 传统开发方式
 依然支持emulator + player的开发方式
 
 ## 资源
@@ -61,18 +61,20 @@ http://apollo.polyvi.com/doc/xFaceSDK/classes/Camera.html#method_getPicture)
 
 8. 不再支持xFace.AMS.closeApplication()接口，关闭应用请调用xFace.app.close()
 
-9. ams/security/zip/advanced-file-transfer 不再仅限于相对路径，增加对绝对路径（以“/”或“file://”开头）以及cdvfile://localhost/<filesystemType>/<path to file>的支持。
+9. ams/security/zip/advanced-file-transfer 等插件不再仅限于相对路径，增加对绝对路径（以“/”或“file://”开头）以及cdvfile://localhost/<filesystemType>/<path to file>的支持。
 也就是说，支持以下形式的路径：
 
    a. 相对app workspace的相对路径，例如："myPath/test.file"
-   b. 以“/”开头的绝对路径，例如："/myPath/..."<br/>
-   c. file://协议URL，例如："file:///myPath/..."<br/>
-   d. cdvfile://localhost/<filesystemType>/<path to file>
+   b. 以“/”开头的绝对路径，例如："/myPath/..."
+   c. file://协议URL，例如："file:///myPath/..."
+   d. cdvfile://localhost/\<filesystemType>/\<path to file>
 
-注意：
-v3.1 “**/**package.file” 的含义为**相对路径**（相对app workspace）
-v3.2 “**/**package.file” 的含义为**绝对路径**
+   注意：
+
+   * v3.1.x “**/**package.file” 的含义为**相对路径**（相对app workspace）
+   * v3.2.0 “**/**package.file” 的含义为**绝对路径**
 
 ## 应用开发需要注意的新变化
-* [app.xml](appxml.md)
-* [config.xml](config.md)
+* [app.xml](http://gitlab.polyvi.com/xface/xface-docs/blob/master/docs/appxml.md)
+* [config.xml](http://gitlab.polyvi.com/xface/xface-docs/blob/master/docs/config.md)
+* file plugin的变化较大，请仔细阅读[文档](http://gitlab.polyvi.com/xface/cordova-plugin-file/blob/master/doc/index.md)
