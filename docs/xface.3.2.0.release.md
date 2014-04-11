@@ -22,6 +22,12 @@ xface 3.2.0 基于 Cordova 3.x开发，对结构进行了彻底调整，主要�
 
 
 ## 和xFace 3.1.x对比
+1. 几个改名的cordova插件
+   * 原Accelerometer改名为Device Motion
+   * 原Compass改名为Device Orientation
+   * 原Connection改名为Network Information
+   
+   但是**js接口没有变化**
 
 1. navigator.network.connection.type 变更为 navigator.connection.type
 [参考文档](http://192.168.2.209:8081/classes/cordova-plugin-network-information.html)
