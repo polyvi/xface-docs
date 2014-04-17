@@ -73,3 +73,12 @@
 <preference name="UmengChannel" value="" />
    ```
    当且仅当使用umeng统计分析插件时有效，请参考[Umeng插件](http://gitlab.polyvi.com/xface/xface-extension-umeng/blob/dev/README.md)
+   
+* extra-lib
+
+   ```
+<preference name="LibRunningMode" value="optimized" />
+<preference name="CustomLaunchImageFile" value="" />
+   ```
+   
+   当且仅当使用extra-lib插件时有效，请参考[extra-lib插件](http://gitlab.polyvi.com/xface/xface-extra-lib/blob/dev/ios/doc/index.md)
